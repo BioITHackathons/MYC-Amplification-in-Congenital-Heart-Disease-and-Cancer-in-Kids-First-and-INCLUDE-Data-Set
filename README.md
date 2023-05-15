@@ -1,6 +1,6 @@
 # MYC-Amplification-in-Congenital-Heart-Disease-and-Cancer-in-Kids-First-and-INCLUDE-Data-Set
 
-Using the [Elements of Style in Workflow](https://github.com/NIH-NICHD/Kids-First-Elements-of-Style-Workflow-Creation-Maintenance) creation approach as taught in the https://nih-nichd.github.io, the team will work together to containerize the processing steps and stitch them together in a workflow language.   On Cavatica, the workflow language best supported is Common Workflow Language (CWL).
+Using the [Elements of Style in Workflow](https://github.com/NIH-NICHD/Kids-First-Elements-of-Style-Workflow-Creation-Maintenance) creation approach as taught in the https://nih-nichd.github.io, the team will work together to containerize the processing steps and stitch them together in a workflow language.   On [Cavatica](https://www.cavatica.org/), the workflow language best supported is [Common Workflow Language (CWL)](https://www.commonwl.org/).
 
 ## Background
 [Background Slides](https://docs.google.com/presentation/d/1esjKl4iIlidfSdeqqJ7LwoOxeMA98vDa5TC5pmtq804/edit#slide=id.g2446d821512_0_0)
@@ -18,12 +18,13 @@ MYC is an oncoprotein and often implies worse outcomes, however it also seems to
 1. Makes a matrix of gene x sample -- in our case the KF RNA-seq workflow was run first.
 2. Seperate the samples between high and low MYC expression
 3. Run WGNCA analysis after deciding the binning (what are the "treatments") including High MYC and Low MYC – a template we will move into  a jupyter lab notebook https://bioinformaticsworkbook.org/tutorials/wgcna.html#gsc.tab=0) 
-4. If outcome (death, etc) is available -- do we see a difference between the two types
-5. What are the outcome differences between high and low MYC expression for the different heart morphologies
-6. Run annotation analysis on the sub categories -- what are the GO and Pathways -- maybe run Reactome analysis -- on the different matrices
+4. If outcome (death, etc) is available -- do we see a difference between the two types?
+5. What are the outcome differences between high and low MYC expression for the different heart morphologies?
+6. Run annotation analysis on the sub-categories -- what are the GO and Pathways? -- maybe run Reactome analysis? -- on the different matrices?
 
-Analysis plan - WGCNA exists as an R program - convert to a notebook - break out the DESeq from the WGCNA
-* Treatment in the WGCNA sense is the condition of the sample:
+Analysis plan - Weighted Gene Co-expression Network Analysis (WGCNA) [*See Publication*](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-559) exists as an R program -> convert to a notebook -> break out the DESeq from the WGCNA
+
+Treatment in the WGCNA sense is the condition of the sample:
 * Trisomy and Disomy samples
 * High Myc and Low Myc expression.  
 * Birth defect (cardiac) and Blood Cancers
@@ -33,7 +34,7 @@ Analysis plan - WGCNA exists as an R program - convert to a notebook - break out
 
 [Docker File for WGCNA](https://github.com/NIH-NICHD/wgcna-docker)
 
-[Docker File for Gene Median Splitter](https://github.com/NIH-NICHD/gene-median-splitter-docker)
+[Docker File for Gene Median Classifier](https://github.com/NIH-NICHD/gene-median-splitter-docker)
 
 [Docker File for DeSeq2](https://github.com/NIH-NICHD/deseq2-docker)
 
