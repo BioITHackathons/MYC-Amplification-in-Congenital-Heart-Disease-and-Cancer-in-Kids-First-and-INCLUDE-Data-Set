@@ -29,4 +29,11 @@ Analysis plan - WGCNA exists as an R program - convert to a notebook - break out
 * Birth defect (cardiac) and Blood Cancers
 * Birth Defect (cardiac) and Solid Tumors
 
-[Template to the docker - WGCNA](https://github.com/NIH-NICHD/wgcna-docker)
+## Docker Files for Project
+
+[Docker File for WGCNA](https://github.com/NIH-NICHD/wgcna-docker)
+
+[Docker File for Gene Median Splitter](https://github.com/NIH-NICHD/gene-median-splitter-docker)
+
+[Docker File for DeSeq2](https://github.com/NIH-NICHD/deseq2-docker)
+
