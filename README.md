@@ -15,12 +15,17 @@ MYC is an oncoprotein and often implies worse outcomes, however it also seems to
 
 ## Moving from Portal to Platform …
 
-1. Makes a matrix of gene x sample -- in our case the KF RNA-seq workflow was run first.
-2. Seperate the samples between high and low MYC expression
-3. Run WGNCA analysis after deciding the binning (what are the "treatments") including High MYC and Low MYC – a template we will move into  a jupyter lab notebook https://bioinformaticsworkbook.org/tutorials/wgcna.html#gsc.tab=0) 
-4. If outcome (death, etc) is available -- do we see a difference between the two types?
-5. What are the outcome differences between high and low MYC expression for the different heart morphologies?
-6. Run annotation analysis on the sub-categories -- what are the GO and Pathways? -- maybe run Reactome analysis? -- on the different matrices?
+1. Make two matrices of gene x sample in Cavatica Portal -- in our case the Kids First RNA-seq workflow (pre-made by CHOP) was run first.
+2. Combine matrices.
+3. Normalize gene expression with deseq2 (not using for differential expression, only for quantile normalisation).
+4. Seperate the samples between high and low MYC expression. Gene Median Splitter Docker
+5. Classify all subjects by phenotype.
+6. Run WGNCA analysis after deciding the binning (what are the "treatments") including High MYC and Low MYC – a template we will move into  a jupyter lab notebook https://bioinformaticsworkbook.org/tutorials/wgcna.html#gsc.tab=0) 
+7. Are there drug interactions? Related Repo for [MYC related pediatric drug saftey profiles](https://github.com/BioITHackathons/myc-related-pediatric-drug-safety-profiles)
+8. Look at congenital and cardiac impact that might be drug interactions.
+9. If outcome (death, etc) is available -- do we see a difference between the two types?
+10. What are the outcome differences between high and low MYC expression for the different heart morphologies?
+11. Run annotation analysis on the sub-categories -- what are the GO and Pathways? -- maybe run Reactome analysis? -- on the different matrices?
 
 Analysis plan - Weighted Gene Co-expression Network Analysis (WGCNA) [*See Publication*](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-559) exists as an R program -> convert to a notebook -> break out the DESeq from the WGCNA
 
@@ -29,8 +34,6 @@ Treatment in the WGCNA sense is the condition of the sample:
 * High Myc and Low Myc expression.  
 * Birth defect (cardiac) and Blood Cancers
 * Birth Defect (cardiac) and Solid Tumors
-
-### Related Repo for [MYC related pediatric drug saftey profiles](https://github.com/BioITHackathons/myc-related-pediatric-drug-safety-profiles)
 
 ## Docker Files for Project
 
