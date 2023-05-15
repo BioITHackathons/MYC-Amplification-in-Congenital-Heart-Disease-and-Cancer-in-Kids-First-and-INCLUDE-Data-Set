@@ -29,3 +29,4 @@ Analysis plan - WGCNA exists as an R program - convert to a notebook - break out
 * Birth defect (cardiac) and Blood Cancers
 * Birth Defect (cardiac) and Solid Tumors
 
+[Template to the docker - WGCNA](https://github.com/NIH-NICHD/wgcna-docker)
