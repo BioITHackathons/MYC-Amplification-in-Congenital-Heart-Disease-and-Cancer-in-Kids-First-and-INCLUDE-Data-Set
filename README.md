@@ -30,6 +30,8 @@ Treatment in the WGCNA sense is the condition of the sample:
 * Birth defect (cardiac) and Blood Cancers
 * Birth Defect (cardiac) and Solid Tumors
 
+### Related Repo for [MYC related pediatric drug saftey profiles](https://github.com/BioITHackathons/myc-related-pediatric-drug-safety-profiles)
+
 ## Docker Files for Project
 
 [Docker File for WGCNA](https://github.com/NIH-NICHD/wgcna-docker)
