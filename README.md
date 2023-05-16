@@ -1,18 +1,19 @@
+
+
 # MYC-Amplification-in-Congenital-Heart-Disease-and-Cancer-in-Kids-First-and-INCLUDE-Data-Set
 
 Using the [Elements of Style in Workflow](https://github.com/NIH-NICHD/Kids-First-Elements-of-Style-Workflow-Creation-Maintenance) creation approach as taught in the https://nih-nichd.github.io, the team will work together to containerize the processing steps and stitch them together in a workflow language.   On [Cavatica](https://www.cavatica.org/), the workflow language best supported is [Common Workflow Language (CWL)](https://www.commonwl.org/).
 
-![Image](img/CAVATICALogo.png)
+|      |        |
+| ------------- | --------------------------------------------------------------------------- |
+| [<img src="img/kfdrc-logo-sm.png" width="750"  align=left>](https://kidsfirstdrc.org/) | [<img src="img/INCLUDEDataCoordinatingCenter.png" width="750" align=right> ](https://includedcc.org/)  |
+
+|              |
+| ------------ |
+| [<img src="img/CAVATICALogo.png" width="750" align=center>](https://cavatica.sbgenomics.com) |
 
 ## Background
 [Background Slides](https://docs.google.com/presentation/d/1esjKl4iIlidfSdeqqJ7LwoOxeMA98vDa5TC5pmtq804/edit#slide=id.g2446d821512_0_0)
-
-<p>
-<br/><br/>
-<img src="img/INCLUDEDataCoordinatingCenter.png"  width="500" >
-<img align="right" width="400" src="img/kfdrc-logo-sm.png">
-<br/><br/>
-</p>
 
 MYC is an oncoprotein and often implies worse outcomes, however, it also seems to have a role in cardiovascular disease. Using open data from both the INCLUDE Data Hub and the Kids First (KF) Data Resource Portal available through the Cavatica Platform, this Hackathon will:
 
