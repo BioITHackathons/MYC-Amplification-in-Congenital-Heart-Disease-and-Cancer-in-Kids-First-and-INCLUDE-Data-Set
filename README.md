@@ -11,26 +11,26 @@ Using the [Elements of Style in Workflow](https://github.com/NIH-NICHD/Kids-Firs
 
 ![Image](img/kfdrc-logo-sm.png)
 
-MYC is an oncoprotein and often implies worse outcomes, however it also seems to have a role in cardiovascular disease. Using open data from both the INCLUDE Data Hub and the Kids First Data Resource Portal, this Hackathon will:
+MYC is an oncoprotein and often implies worse outcomes, however, it also seems to have a role in cardiovascular disease. Using open data from both the INCLUDE Data Hub and the Kids First Data Resource Portal available through the Cavatica Platform, this Hackathon will:
 
 * Explore MYC expression and its segregating effects at the intersection of congenital heart defects and cancer
 
 * Build platform agnostic workflows and analysis notebooks using the elements of style method (https://nih-nichd.github.io) that will use both WGCNA and limma to probe the dual role of this gene.
 
-* Result both in a tutorial of how to proceed from both https://portal.includedcc.org/ and https://portal.kidsfirstdrc.org to https://cavatica.sbgenomics.com/ as well as produce results in notebooks that could be used as figures in a paper promoting open transparent, reproducible results.
+* Result in a tutorial of how to proceed from both https://portal.includedcc.org/ and https://portal.kidsfirstdrc.org to https://cavatica.sbgenomics.com/ as well as produce results in notebooks that could be used as figures in a paper promoting open transparent, reproducible results.
 
 ## Moving from Portal to Platform …
 
-1. Make two matrices of gene x sample in Cavatica Portal -- in our case the Kids First RNA-seq workflow (pre-made by CHOP) was run first.
-2. Combine matrices - birth defects and cancer.
+1. Make two matrices of gene x sample in Cavatica Portal -- in our case the Kids First RNA-seq workflow (pre-made by CHOP).
+2. Combine expression matrices for birth defects and cancer.
 3. Normalize gene expression with deseq2 (not using for differential expression, only for quantile normalisation).
-4. Separate the samples between high and low MYC expression. Gene Median Splitter Docker
+4. Separate the samples between high and low MYC expression using Gene Median Splitter.
 5. Classify all subjects by phenotype.
-6. Run WGNCA analysis after deciding the binning (what are the "treatments") including High MYC and Low MYC – a template we will move into a jupyter lab notebook https://bioinformaticsworkbook.org/tutorials/wgcna.html#gsc.tab=0) 
-7. Look at congenital and cardiac impact that might be drug interactions. Are there drug interactions? Related Repo for [MYC related pediatric drug saftey profiles](https://github.com/BioITHackathons/myc-related-pediatric-drug-safety-profiles)
-8. If outcome (death, etc) is available -- do we see a difference between the two types?
-9. What are the outcome differences between high and low MYC expression for the different heart morphologies?
-10. Run annotation analysis on the sub-categories -- what are the GO and Pathways? -- maybe run Reactome analysis? -- on the different matrices?
+6. Run WGNCA analysis after binning  based on High MYC and Low MYC expression.
+7. Create a template jupyter lab notebook https://bioinformaticsworkbook.org/tutorials/wgcna.html#gsc.tab=0). 
+8. Look at congenital and cardiac outcomes that might be due to drug interactions. *Related Repo for [MYC related pediatric drug saftey profiles](https://github.com/BioITHackathons/myc-related-pediatric-drug-safety-profiles)
+9. What are some outcome differences between high and low MYC expression; different heart morphologies, birth defects based on HPO terms.
+10. Run annotation analysis such as GO and biological pathways, maybe Reactome.
 
 Analysis plan - Weighted Gene Co-expression Network Analysis (WGCNA) [*See Publication*](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-559) exists as an R program -> convert to a notebook -> break out the DESeq from the WGCNA
 
