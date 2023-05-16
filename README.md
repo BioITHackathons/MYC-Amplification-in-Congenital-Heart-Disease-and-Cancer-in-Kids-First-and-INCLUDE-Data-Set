@@ -36,6 +36,12 @@ MYC is an oncoprotein and often implies worse outcomes, however, it also seems t
 9. What are some outcome differences between high and low MYC expression; different heart morphologies, birth defects based on HPO terms.
 10. Run annotation analysis such as GO and biological pathways, maybe Reactome.
 
+Workflow Diagram:
+
+<p align="center">
+  <img width="460" src="img/Splitter.PNG">
+</p>
+
 Analysis plan - Weighted Gene Co-expression Network Analysis (WGCNA) [*See Publication*](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-559) exists as an R program -> convert to a notebook -> break out the DESeq from the WGCNA
 
 Treatment in the WGCNA sense is the condition of the sample:
