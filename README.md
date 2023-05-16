@@ -52,9 +52,10 @@ Treatment in the WGCNA sense is the condition of the sample:
 
 ## Docker Files for Project
 
-[Docker File for WGCNA](https://github.com/NIH-NICHD/wgcna-docker)
+* [Step 1a - Docker File for Combine Matrices](https://github.com/NIH-NICHD/combine-matrices-docker)
+* [Step 1 - Docker File for DeSeq2](https://github.com/NIH-NICHD/deseq2-docker)
+* [Step 2 - Docker File for Gene Median Classifier](https://github.com/NIH-NICHD/gene-median-splitter-docker)
+* [Step 3 - Docker File for WGCNA](https://github.com/NIH-NICHD/wgcna-docker)
 
-[Docker File for Gene Median Classifier](https://github.com/NIH-NICHD/gene-median-splitter-docker)
 
-[Docker File for DeSeq2](https://github.com/NIH-NICHD/deseq2-docker)
 
