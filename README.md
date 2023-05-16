@@ -18,7 +18,7 @@ MYC is an oncoprotein and often implies worse outcomes, however it also seems to
 1. Make two matrices of gene x sample in Cavatica Portal -- in our case the Kids First RNA-seq workflow (pre-made by CHOP) was run first.
 2. Combine matrices.
 3. Normalize gene expression with deseq2 (not using for differential expression, only for quantile normalisation).
-4. Seperate the samples between high and low MYC expression. Gene Median Splitter Docker
+4. Separate the samples between high and low MYC expression. Gene Median Splitter Docker
 5. Classify all subjects by phenotype.
 6. Run WGNCA analysis after deciding the binning (what are the "treatments") including High MYC and Low MYC – a template we will move into  a jupyter lab notebook https://bioinformaticsworkbook.org/tutorials/wgcna.html#gsc.tab=0) 
 7. Are there drug interactions? Related Repo for [MYC related pediatric drug saftey profiles](https://github.com/BioITHackathons/myc-related-pediatric-drug-safety-profiles)
