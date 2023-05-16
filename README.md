@@ -7,9 +7,12 @@ Using the [Elements of Style in Workflow](https://github.com/NIH-NICHD/Kids-Firs
 ## Background
 [Background Slides](https://docs.google.com/presentation/d/1esjKl4iIlidfSdeqqJ7LwoOxeMA98vDa5TC5pmtq804/edit#slide=id.g2446d821512_0_0)
 
-![Image](img/INCLUDEDataCoordinatingCenter.png)
-
-![Image](img/kfdrc-logo-sm.png)
+<p>
+<br/><br/>
+<img src="img/INCLUDEDataCoordinatingCenter.png"  width="500" >
+<img align="right" width="400" src="img/kfdrc-logo-sm.png">
+<br/><br/>
+</p>
 
 MYC is an oncoprotein and often implies worse outcomes, however, it also seems to have a role in cardiovascular disease. Using open data from both the INCLUDE Data Hub and the Kids First (KF) Data Resource Portal available through the Cavatica Platform, this Hackathon will:
 
