@@ -11,9 +11,9 @@ Using the [Elements of Style in Workflow](https://github.com/NIH-NICHD/Kids-Firs
 
 ![Image](img/kfdrc-logo-sm.png)
 
-MYC is an oncoprotein and often implies worse outcomes, however, it also seems to have a role in cardiovascular disease. Using open data from both the INCLUDE Data Hub and the Kids First Data Resource Portal available through the Cavatica Platform, this Hackathon will:
+MYC is an oncoprotein and often implies worse outcomes, however, it also seems to have a role in cardiovascular disease. Using open data from both the INCLUDE Data Hub and the Kids First (KF) Data Resource Portal available through the Cavatica Platform, this Hackathon will:
 
-* Explore MYC expression and its segregating effects at the intersection of congenital heart defects and cancer
+* Explore MYC expression and its segregating effects at the intersection of A) congenital heart defects and cancer from KF & B) & Down Syndrome (Include)
 
 * Build platform agnostic workflows and analysis notebooks using the elements of style method (https://nih-nichd.github.io) that will use both WGCNA and limma to probe the dual role of this gene.
 
